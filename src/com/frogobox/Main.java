@@ -20,10 +20,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         Helperhildan helperhildan = new Helperhildan();
-        ArrayList<String> inputan = helperhildan.sparatorstring(input);
-        for (int i = 0; i < inputan.size() ; i++) {
-            System.out.println(inputan.get(i));
-        }
+        helperhildan.loopstring(input);
 
 
     }

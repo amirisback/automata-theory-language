@@ -14,4 +14,12 @@ public class Helperhildan {
         return partTemp;
     }
 
+
+    public void loopstring(String input){
+        ArrayList<String> loop = sparatorstring(input);
+        for (int i = 0; i < loop.size(); i++) {
+            System.out.println(new Helper().checkTokenIf(loop.get(i).toCharArray()));
+        }
+    }
+
 }
