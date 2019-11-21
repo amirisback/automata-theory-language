@@ -18,7 +18,7 @@ package com.frogobox.helper;
  */
 public class CharChecker {
 
-    // List String Lexic : p,q,r,s, not, and, or, xor, if, then, iff, (, )
+    // List String Lexic : p, q, r, s, not, and, or, xor, if, then, iff, (, )
     // List Character : a, e, f, i, n, o, p, q, r, s, t, x, (, )
 
     public boolean checkA(char input) {
