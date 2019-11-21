@@ -19,45 +19,53 @@ package com.frogobox.helper;
 public class CharChecker {
 
     // List String Lexic : p, q, r, s, not, and, or, xor, if, then, iff, (, )
-    // List Character : a, e, f, i, n, o, p, q, r, s, t, x, (, )
+    // List Character : a, d, e, f, h, i, n, o, p, q, r, s, t, x, (, )
 
-    public boolean checkA(char input) {
+    boolean checkA(char input) {
         return (input == 'a') || input == 'A';
+    }
+
+    boolean checkD(char input) {
+        return (input == 'd') || input == 'D';
     }
 
     public boolean checkE(char input) {
         return (input == 'e') || input == 'E';
     }
 
-    public boolean checkF(char input) {
+    boolean checkF(char input) {
         return (input == 'f') || input == 'F';
     }
 
-    public boolean checkI(char input) {
+    boolean checkH(char input) {
+        return (input == 'h') || input == 'H';
+    }
+
+    boolean checkI(char input) {
         return (input == 'i') || input == 'I';
     }
 
-    public boolean checkN(char input) {
+    boolean checkN(char input) {
         return (input == 'n') || input == 'N';
     }
 
-    public boolean checkO(char input) {
+    boolean checkO(char input) {
         return (input == 'o') || input == 'O';
     }
 
-    public boolean checkP(char input) {
+    boolean checkP(char input) {
         return (input == 'p') || input == 'P';
     }
 
-    public boolean checkQ(char input) {
+    boolean checkQ(char input) {
         return (input == 'q') || input == 'Q';
     }
 
-    public boolean checkR(char input) {
+    boolean checkR(char input) {
         return (input == 'r') || input == 'R';
     }
 
-    public boolean checkS(char input) {
+    boolean checkS(char input) {
         return (input == 's') || input == 'S';
     }
 
@@ -69,13 +77,34 @@ public class CharChecker {
         return (input == 'x') || input == 'X';
     }
 
-    public boolean checkBracketOpen(char input) {
+    boolean checkBracketOpen(char input) {
         return input == '(';
     }
 
-    public boolean checkBracketClose(char input) {
+    boolean checkBracketClose(char input) {
         return input == ')';
     }
+
+    // Check length for proposition p,q,r,s,(,)
+    boolean checkSizeOneChar(char[] arrayString){
+        return arrayString.length == 1;
+    }
+
+    // Check length for if,or,
+    boolean checkSizeTwoChar(char[] arrayString){
+        return arrayString.length == 2;
+    }
+
+    // Check length for not,and,xor,iff
+    boolean checkSizeThreeChar(char[] arrayString){
+        return arrayString.length == 3;
+    }
+
+    // Check length for then
+    public boolean checkSizeFourChar(char[] arrayString){
+        return arrayString.length == 4;
+    }
+
 
 
 }
