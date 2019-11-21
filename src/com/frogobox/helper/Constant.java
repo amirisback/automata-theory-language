@@ -27,8 +27,8 @@ public class Constant {
     public static final int TOKEN_IF = 6;
     public static final int TOKEN_THEN = 7;
     public static final int TOKEN_IFF = 8;
-    public static final int TOKEN_BRACKET_OPEN = 9; // {
-    public static final int TOKEN_BRACKET_CLOSE = 10; // }
+    public static final int TOKEN_BRACKET_OPEN = 9; // (
+    public static final int TOKEN_BRACKET_CLOSE = 10; // )
 
 
 }

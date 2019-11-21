@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 	    new Main().programView();
     }
-    
+
     private void mainView(){
         System.out.println();
     }
