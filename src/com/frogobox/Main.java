@@ -1,5 +1,6 @@
 package com.frogobox;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -18,6 +19,12 @@ public class Main {
         System.out.print("Input Program : ");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        System.out.println(input);
+        Helperhildan helperhildan = new Helperhildan();
+        ArrayList<String> inputan = helperhildan.sparatorstring(input);
+        for (int i = 0; i < inputan.size() ; i++) {
+            System.out.println(inputan.get(i));
+        }
+
+
     }
 }
