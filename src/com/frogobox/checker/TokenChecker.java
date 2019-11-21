@@ -102,30 +102,5 @@ public class TokenChecker {
         }
     }
 
-    public int getParseToken(char[] arrayString) {
-        if (stringChecker.checkStringProposition(arrayString)) {
-            return TOKEN_PROPOSITION;
-        } else if (stringChecker.checkStringNot(arrayString)) {
-            return TOKEN_NOT;
-        } else if (stringChecker.checkStringAnd(arrayString)) {
-            return TOKEN_AND;
-        } else if (stringChecker.checkStringOr(arrayString)) {
-            return TOKEN_OR;
-        } else if (stringChecker.checkStringXor(arrayString)) {
-            return TOKEN_XOR;
-        } else if (stringChecker.checkStringIf(arrayString)) {
-            return TOKEN_IF;
-        } else if (stringChecker.checkStringThen(arrayString)) {
-            return TOKEN_THEN;
-        } else if (stringChecker.checkStringIff(arrayString)) {
-            return TOKEN_IFF;
-        } else if (stringChecker.checkStringBracketOpen(arrayString)) {
-            return TOKEN_BRACKET_OPEN;
-        } else if (stringChecker.checkStringBracketClose(arrayString)) {
-            return TOKEN_BRACKET_CLOSE;
-        } else {
-            return 0;
-        }
-    }
 
 }

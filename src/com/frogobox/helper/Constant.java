@@ -33,6 +33,7 @@ public class Constant {
     // -----------------------------------------------------------------------------------------------------------------
     public static final String TEXT_INPUT  = "Input (String)        : ";
     public static final String TEXT_OUTPUT = "Output (Token Lexic)  : ";
+    public static final String TEXT_RESULT = "Output                : ";
     public static final String TEXT_VALID = "Valid";
     public static final String TEXT_NOT_VALID = "Tidak Valid";
     public static final String VIEW_LINE = "----------------------------------------------";
