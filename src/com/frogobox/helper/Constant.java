@@ -31,8 +31,8 @@ public class Constant {
     public static final int TOKEN_BRACKET_CLOSE = 10; // )
     public static final String TOKEN_ERROR = "error";
     // -----------------------------------------------------------------------------------------------------------------
-    public static final String TEXT_INPUT = "Input (String) \t\t\t: ";
-    public static final String TEXT_OUTPUT = "Output (Token Lexic) \t: ";
+    public static final String TEXT_INPUT  = "Input (String)        : ";
+    public static final String TEXT_OUTPUT = "Output (Token Lexic)  : ";
     public static final String TEXT_VALID = "Valid";
     public static final String TEXT_NOT_VALID = "Tidak Valid";
     public static final String VIEW_LINE = "----------------------------------------------";
