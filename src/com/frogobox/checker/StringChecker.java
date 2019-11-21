@@ -22,7 +22,7 @@ public class StringChecker {
 
     private CharChecker charChecker = new CharChecker();
 
-    public boolean checkStringP(char[] arrayString){
+    private boolean checkStringP(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkP(arrayString[0]);
         } else {
@@ -30,7 +30,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringQ(char[] arrayString){
+    private boolean checkStringQ(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkQ(arrayString[0]);
         } else {
@@ -38,7 +38,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringR(char[] arrayString){
+    private boolean checkStringR(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkR(arrayString[0]);
         } else {
@@ -46,7 +46,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringS(char[] arrayString){
+    private boolean checkStringS(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkS(arrayString[0]);
         } else {

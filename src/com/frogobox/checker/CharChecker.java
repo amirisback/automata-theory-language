@@ -29,7 +29,7 @@ public class CharChecker {
         return (input == 'd') || input == 'D';
     }
 
-    public boolean checkE(char input) {
+    boolean checkE(char input) {
         return (input == 'e') || input == 'E';
     }
 
@@ -69,11 +69,11 @@ public class CharChecker {
         return (input == 's') || input == 'S';
     }
 
-    public boolean checkT(char input) {
+    boolean checkT(char input) {
         return (input == 't') || input == 'T';
     }
 
-    public boolean checkX(char input) {
+    boolean checkX(char input) {
         return (input == 'x') || input == 'X';
     }
 
@@ -101,7 +101,7 @@ public class CharChecker {
     }
 
     // Check length for then
-    public boolean checkSizeFourChar(char[] arrayString){
+    boolean checkSizeFourChar(char[] arrayString){
         return arrayString.length == 4;
     }
 
