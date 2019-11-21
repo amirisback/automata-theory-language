@@ -29,6 +29,11 @@ public class Constant {
     public static final int TOKEN_IFF = 8;
     public static final int TOKEN_BRACKET_OPEN = 9; // (
     public static final int TOKEN_BRACKET_CLOSE = 10; // )
-
+    public static final String TOKEN_ERROR = "error";
+    // -----------------------------------------------------------------------------------------------------------------
+    public static final String TEXT_INPUT = "Input \t: ";
+    public static final String TEXT_OUTPUT = "Output \t: ";
+    public static final String TEXT_VALID = "Valid";
+    public static final String TEXT_NOT_VALID = "Tidak Valid";
 
 }
