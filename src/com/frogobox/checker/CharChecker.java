@@ -1,4 +1,4 @@
-package com.frogobox.helper;
+package com.frogobox.checker;
 
 /**
  * Created by Faisal Amir
