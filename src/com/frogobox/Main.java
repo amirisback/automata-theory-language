@@ -9,10 +9,12 @@ import static com.frogobox.helper.Constant.*;
 public class Main {
 
     private void teamView(){
-        System.out.println("Muhammad Faisal Amir");
-        System.out.println("Hildan Fawwaz");
-        System.out.println("Monica liviandra");
-        System.out.println("Revi Chandra Riana");
+        System.out.println(TEXT_TITLE_PROGRAM);
+        System.out.println(VIEW_LINE);
+        System.out.println("Muhammad Faisal Amir (1301198497)");
+        System.out.println("Hildan Fawwaz        (1301198514)");
+        System.out.println("Monica liviandra     (1301198517)");
+        System.out.println("Revi Chandra Riana   (1301198512)");
         System.out.println("IFX - 43 - 02");
         System.out.println(VIEW_LINE);
     }
@@ -35,21 +37,21 @@ public class Main {
 
     public static void main(String[] args) {
         // Write your code here
-//        new Main().teamView();
+        new Main().teamView();
         new Main().introView();
         new Main().onCreate();
     }
 
     private void onCreate(){
         // Call all function here
-        System.out.print(TEXT_INPUT);
-        new Logic().parseString(getStringScanner());
-        
+        runLexicalAnalyzer();
     }
 
-    private String getStringScanner(){
+    private void runLexicalAnalyzer(){
+        System.out.print(TEXT_INPUT);
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        String input = scanner.nextLine();
+        new Logic().parseString(input);
     }
 
 

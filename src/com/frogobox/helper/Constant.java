@@ -18,6 +18,15 @@ package com.frogobox.helper;
  */
 public class Constant {
 
+    public static final String TEXT_TITLE_PROGRAM = "Lexical Analyzer";
+    // -----------------------------------------------------------------------------------------------------------------
+    public static final String TEXT_INPUT  = "Input (String)        : ";
+    public static final String TEXT_OUTPUT = "Output (Token Lexic)  : ";
+    public static final String TEXT_RESULT = "Output                : ";
+    public static final String TEXT_VALID = "Valid";
+    public static final String TEXT_NOT_VALID = "Tidak Valid";
+    public static final String VIEW_LINE = "----------------------------------------------";
+    // -----------------------------------------------------------------------------------------------------------------
     public static final int TOKEN = 0;
     public static final int TOKEN_PROPOSITION = 1;
     public static final int TOKEN_NOT = 2;
@@ -31,11 +40,5 @@ public class Constant {
     public static final int TOKEN_BRACKET_CLOSE = 10; // )
     public static final String TOKEN_ERROR = "error";
     // -----------------------------------------------------------------------------------------------------------------
-    public static final String TEXT_INPUT  = "Input (String)        : ";
-    public static final String TEXT_OUTPUT = "Output (Token Lexic)  : ";
-    public static final String TEXT_RESULT = "Output                : ";
-    public static final String TEXT_VALID = "Valid";
-    public static final String TEXT_NOT_VALID = "Tidak Valid";
-    public static final String VIEW_LINE = "----------------------------------------------";
 
 }
