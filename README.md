@@ -1,10 +1,13 @@
 # Automata-Theory-Language
 Final Task Auotomata Theory Language
 
+# About This Project
+Simple Parser for Proposition Logic Formula
+
 # Colaborator
 - Muhammad Faisal Amir  (1301198497)
 - Hildan Fawwaz         (1301198514)
-- Monica liviandra      (1301198517)
+- Monica Liviandra      (1301198517)
 - Revi Chandra Riana    (1301198512)
 
 # University
