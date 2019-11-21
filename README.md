@@ -20,3 +20,6 @@ https://github.com/amirisback/Automata-Theory-Language/blob/master/docs/Final_Ta
 
 # Link Report
 https://docs.google.com/document/d/1lx60FWgW16d4Jm7FurFey0zS8u_1UN7Yqym_oUWwV88/edit?usp=sharing
+
+# Attention !!!
+Please enjoy and don't forget fork and give a star
