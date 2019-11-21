@@ -3,6 +3,13 @@ Final Task Auotomata Theory Language
 
 # About This Project
 Simple Parser for Proposition Logic Formula
+- Program Lexical Analyzer
+- Validation Program Lexical Analyzer
+
+# Implement Automata Process
+- Finite Automata
+- Context Free Grammer
+- Push Down Automata
 
 # Colaborator
 - Muhammad Faisal Amir  (1301198497)
