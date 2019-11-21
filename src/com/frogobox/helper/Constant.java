@@ -19,7 +19,7 @@ package com.frogobox.helper;
 public class Constant {
 
     public static final int TOKEN = 0;
-    public static final int TOKEN_PROPOSISI = 1;
+    public static final int TOKEN_PROPOSITION = 1;
     public static final int TOKEN_NOT = 2;
     public static final int TOKEN_AND = 3;
     public static final int TOKEN_OR = 4;
