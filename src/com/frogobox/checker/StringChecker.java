@@ -22,7 +22,7 @@ public class StringChecker {
 
     private CharChecker charChecker = new CharChecker();
 
-    public boolean checkStringP(char[] arrayString){
+    boolean checkStringP(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkP(arrayString[0]);
         } else {
@@ -30,7 +30,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringQ(char[] arrayString){
+    boolean checkStringQ(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkQ(arrayString[0]);
         } else {
@@ -38,7 +38,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringR(char[] arrayString){
+    boolean checkStringR(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkR(arrayString[0]);
         } else {
@@ -46,7 +46,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringS(char[] arrayString){
+    boolean checkStringS(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkS(arrayString[0]);
         } else {
@@ -54,7 +54,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringBracketOpen(char[] arrayString){
+    boolean checkStringBracketOpen(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkBracketOpen(arrayString[0]);
         } else {
@@ -62,7 +62,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringBracketClose(char[] arrayString){
+    boolean checkStringBracketClose(char[] arrayString){
         if (charChecker.checkSizeOneChar(arrayString)){
             return charChecker.checkBracketClose(arrayString[0]);
         } else {
@@ -70,7 +70,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringIf(char[] arrayString) {
+    boolean checkStringIf(char[] arrayString) {
         if (charChecker.checkSizeTwoChar(arrayString)) {
             if (charChecker.checkI(arrayString[0])) {
                 return charChecker.checkF(arrayString[1]);
@@ -82,7 +82,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringOr(char[] arrayString) {
+    boolean checkStringOr(char[] arrayString) {
         if (charChecker.checkSizeTwoChar(arrayString)) {
             if (charChecker.checkO(arrayString[0])) {
                 return charChecker.checkR(arrayString[1]);
@@ -94,7 +94,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringAnd(char[] arrayString) {
+    boolean checkStringAnd(char[] arrayString) {
         if (charChecker.checkSizeThreeChar(arrayString)) {
             if (charChecker.checkA(arrayString[0])) {
                 if (charChecker.checkN(arrayString[1])) {
@@ -110,7 +110,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringNot(char[] arrayString) {
+    boolean checkStringNot(char[] arrayString) {
         if (charChecker.checkSizeThreeChar(arrayString)) {
             if (charChecker.checkN(arrayString[0])) {
                 if (charChecker.checkO(arrayString[1])) {
@@ -126,7 +126,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringXor(char[] arrayString) {
+    boolean checkStringXor(char[] arrayString) {
         if (charChecker.checkSizeThreeChar(arrayString)) {
             if (charChecker.checkX(arrayString[0])) {
                 if (charChecker.checkO(arrayString[1])) {
@@ -142,7 +142,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringIff(char[] arrayString) {
+    boolean checkStringIff(char[] arrayString) {
         if (charChecker.checkSizeThreeChar(arrayString)) {
             if (charChecker.checkI(arrayString[0])) {
                 if (charChecker.checkF(arrayString[1])) {
@@ -158,7 +158,7 @@ public class StringChecker {
         }
     }
 
-    public boolean checkStringThen(char[] arrayString) {
+    boolean checkStringThen(char[] arrayString) {
         if (charChecker.checkSizeFourChar(arrayString)) {
             if (charChecker.checkT(arrayString[0])) {
                 if (charChecker.checkH(arrayString[1])) {
