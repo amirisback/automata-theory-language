@@ -13,7 +13,7 @@ Final Task Auotomata Theory Language
 - IFX - 43 -02
 
 # Link Task
-https://github.com/amirisback/Automata-Theory-Language/blob/master/Final_Task_TBA_2019.pdf
+https://github.com/amirisback/Automata-Theory-Language/blob/master/docs/Final_Task_TBA_2019.pdf
 
 # Link Report
 https://docs.google.com/document/d/1lx60FWgW16d4Jm7FurFey0zS8u_1UN7Yqym_oUWwV88/edit?usp=sharing
