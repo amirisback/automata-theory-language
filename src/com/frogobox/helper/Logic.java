@@ -65,14 +65,20 @@ public class Logic {
 
         System.out.print(TEXT_OUTPUT);
 
-        for (Integer integer : arrayListToken) {
-            if (integer != 0) {
-                System.out.print(integer + "\t");
+        for (int i = 0; i < arrayListToken.size(); i++) {
+            if (arrayListToken.get(i) != 0) {
+                System.out.print(arrayListToken.get(i) + "\t");
+                if (i != arrayListToken.size() - 1) {
+                    if (arrayListToken.get(i) == arrayListToken.get(i + 1)) {
+                        checkValid = TEXT_NOT_VALID;
+                    }
+                }
             } else {
                 System.out.print(TOKEN_ERROR + " ");
                 checkValid = TEXT_NOT_VALID;
                 break;
             }
+            
         }
 
         System.out.println();
