@@ -53,8 +53,38 @@ public class Logic {
         return partTemp;
     }
 
-    public void parseString(String input) {
+    private void validatorLexicalParse(ArrayList<Integer> arrayListToken) {
         String checkValid = TEXT_VALID;
+
+        System.out.print(TEXT_OUTPUT);
+
+        if ((arrayListToken.size() == 1) && (arrayListToken.get(0) <= 10)) {
+            checkValid = TEXT_NOT_VALID;
+            System.out.print(arrayListToken.get(0));
+        } else {
+            for (int i = 0; i < arrayListToken.size(); i++) {
+                if (arrayListToken.get(i) != 0) {
+                    System.out.print(arrayListToken.get(i) + "\t");
+                    if (i != arrayListToken.size() - 1) {
+                        if (arrayListToken.get(i) == arrayListToken.get(i + 1)) {
+                            checkValid = TEXT_NOT_VALID;
+                        }
+                    }
+                } else {
+                    System.out.print(TOKEN_ERROR + " ");
+                    checkValid = TEXT_NOT_VALID;
+                    break;
+                }
+            }
+        }
+
+        System.out.println();
+        System.out.println(TEXT_RESULT + checkValid);
+    }
+
+
+    public void parseString(String input) {
+
         ArrayList<Integer> arrayListToken = new ArrayList<>();
         ArrayList<String> arrayListWord = arraySplitString(input);
 
@@ -63,28 +93,7 @@ public class Logic {
             arrayListToken.add(getParseToken(word));
         }
 
-        System.out.print(TEXT_OUTPUT);
-
-        for (int i = 0; i < arrayListToken.size(); i++) {
-            if (arrayListToken.get(i) != 0) {
-                System.out.print(arrayListToken.get(i) + "\t");
-                if (i != arrayListToken.size() - 1) {
-                    if (arrayListToken.get(i) == arrayListToken.get(i + 1)) {
-                        checkValid = TEXT_NOT_VALID;
-                    }
-                }
-            } else {
-                System.out.print(TOKEN_ERROR + " ");
-                checkValid = TEXT_NOT_VALID;
-                break;
-            }
-            
-        }
-
-        System.out.println();
-        System.out.println(TEXT_RESULT + checkValid);
-
+        validatorLexicalParse(arrayListToken);
     }
-
 
 }
