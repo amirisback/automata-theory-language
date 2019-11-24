@@ -53,14 +53,23 @@ public class Logic {
         return partTemp;
     }
 
+    private boolean checkValidPropotionalLogic(ArrayList<Integer> integerArrayList) {
+        return (integerArrayList.get(0) == 2) && (integerArrayList.get(1) == 1);
+    }
+
+
     private void validatorLexicalParse(ArrayList<Integer> arrayListToken) {
         String checkValid = TEXT_VALID;
-
-        System.out.print(TEXT_OUTPUT);
-
         if ((arrayListToken.size() == 1) && (arrayListToken.get(0) <= 10)) {
             checkValid = TEXT_NOT_VALID;
             System.out.print(arrayListToken.get(0));
+        } else if ((arrayListToken.size() == 2)) {
+            if (!checkValidPropotionalLogic(arrayListToken)) {
+                checkValid = TEXT_NOT_VALID;
+            }
+            for (Integer integer : arrayListToken) {
+                System.out.print(integer + "\t");
+            }
         } else {
             for (int i = 0; i < arrayListToken.size(); i++) {
                 if (arrayListToken.get(i) != 0) {
@@ -84,15 +93,13 @@ public class Logic {
 
 
     public void parseString(String input) {
-
         ArrayList<Integer> arrayListToken = new ArrayList<>();
         ArrayList<String> arrayListWord = arraySplitString(input);
-
         for (String stringWord : arrayListWord) {
             char[] word = separatorString(stringWord);
             arrayListToken.add(getParseToken(word));
         }
-
+        System.out.print(TEXT_OUTPUT);
         validatorLexicalParse(arrayListToken);
     }
 
