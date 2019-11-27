@@ -61,14 +61,28 @@ public class Logic {
     private void validatorLexicalParse(ArrayList<Integer> arrayListToken) {
         String checkValid = TEXT_VALID;
         if ((arrayListToken.size() == 1) && (arrayListToken.get(0) <= 10)) {
-            checkValid = TEXT_NOT_VALID;
-            System.out.print(arrayListToken.get(0));
+
+            if (arrayListToken.get(0) == 1) {
+                System.out.print(arrayListToken.get(0));
+            } else if (arrayListToken.get(0) == 0) {
+                System.out.print(TOKEN_ERROR + " ");
+                checkValid = TEXT_NOT_VALID;
+            } else {
+                System.out.print(arrayListToken.get(0));
+                checkValid = TEXT_NOT_VALID;
+            }
+
         } else if ((arrayListToken.size() == 2)) {
             if (!checkValidPropotionalLogic(arrayListToken)) {
                 checkValid = TEXT_NOT_VALID;
             }
             for (Integer integer : arrayListToken) {
-                System.out.print(integer + "\t");
+                if (integer == 0) {
+                    System.out.print(TOKEN_ERROR + " ");
+                } else {
+                    System.out.print(integer + "\t");
+                }
+
             }
         } else {
             for (int i = 0; i < arrayListToken.size(); i++) {
