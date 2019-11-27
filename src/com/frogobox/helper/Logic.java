@@ -58,6 +58,7 @@ public class Logic {
     }
 
 
+    // Token Per Kata
     private void validatorLexicalParse(ArrayList<Integer> arrayListToken) {
         String checkValid = TEXT_VALID;
         if ((arrayListToken.size() == 1) && (arrayListToken.get(0) <= 10)) {
@@ -79,6 +80,7 @@ public class Logic {
             for (Integer integer : arrayListToken) {
                 if (integer == 0) {
                     System.out.print(TOKEN_ERROR + " ");
+                    break;
                 } else {
                     System.out.print(integer + "\t");
                 }
